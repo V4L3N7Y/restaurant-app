@@ -1,14 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import RestaurantApi from './components/RestaurantsApi';
-
+import Header from './components/Header';
 
 export default function App() {
   return (
     
-    <View style={styles.container}>     
-        <RestaurantApi/>  
-      
+    <View style={styles.container}>  
+        <Header/>   
+         <RestaurantApi/>     
       <StatusBar style="auto" />
     </View>
   );
