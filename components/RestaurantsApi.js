@@ -91,11 +91,11 @@ export default function RestaurantsApi() {
   };
 
   
-  const openMaps = (lat, lng) => {
-    const url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+  const openMaps = (places) => {
+    const url = `https://www.google.com/maps/dir/?api=1&destination=${places.geometry.location.lat},${places.geometry.location.lng}`;
     console.log('Maps URL:', url);
     Linking.openURL(url).then(() => {
-      console.log('Opened Maps successfully');
+      console.log('Opened Maps successfully', places.geometry.location);
     }).catch((err) => {
       console.error('Failed to open Maps:', err);
     });
