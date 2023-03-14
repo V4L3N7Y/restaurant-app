@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, ScrollView, Image, Dimensions, TouchableOpacity, Linking } from 'react-native';
 
 
-const API_KEY = 'AIzaSyAFyA9ta0evqTROKT8E63tUUBwhIrk6Uok';
+const API_KEY = 'secret';
 const LATITUDE = 44.4379853; // example latitude
 const LONGITUDE = 25.9545531; // example longitude
 const RADIUS = 27000; // Romania radius in meters
